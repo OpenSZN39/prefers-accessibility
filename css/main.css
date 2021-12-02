@@ -74,7 +74,26 @@ html {
 
 }
 
-@media (prefers-color-scheme-dark) {
+main {
+   background-color: #fff;
+}
 
+@media (prefers-color-scheme: dark) {
+  main {
+    background: #111;
+  }
+  .banner {
+    color: #333;
+  }
+  h1 {
+    color: #ccc;
+  }
 }
 /* stylelint-enable */
+
+/* When dark-mode is enabled the following css properties should be enabled/set:
+
+the background of the body should change to #111
+the background of the banner should change to #333
+the colour of the h1 should change to #ccc
+/*
