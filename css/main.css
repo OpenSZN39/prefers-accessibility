@@ -64,36 +64,33 @@ html {
 /* stylelint-disable media-feature-name-no-unknown */
 
 /**
- * =============
- * Write your “prefers” media queries here, between these two `stylelint` comments.
- * Unfortunately, Markbot, is a little too old to understand them. :(
- * =============
- */
+* =============
+* Write your “prefers” media queries here, between these two `stylelint` comments.
+* Unfortunately, Markbot, is a little too old to understand them. :(
+* =============
+*/
 
 @media (prefers-reduced-motion) {
 
-}
+  .gear {
+    animation: none;
+  }
 
-main {
-   background-color: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
-  main {
-    background: #111;
-  }
+
   .banner {
-    color: #333;
+    background-color: #333;
   }
-  h1 {
+
+  .banner h1 {
     color: #ccc;
   }
+
+  body {
+    background-color: #111;
+  }
+
 }
 /* stylelint-enable */
-
-/* When dark-mode is enabled the following css properties should be enabled/set:
-
-the background of the body should change to #111
-the background of the banner should change to #333
-the colour of the h1 should change to #ccc
-/*
